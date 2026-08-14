@@ -1,0 +1,40 @@
+[plan]
+title = "Synthetic hardware-live power study"
+declared_supply_voltage_v = "230"
+review_note = "Fictional declarations only; this is an arithmetic worksheet, not electrical evidence."
+
+[[circuits]]
+id = "stage-left"
+label = "Synthetic left circuit"
+declared_max_current_a = "10"
+notes = "Fictional declared maximum only."
+
+[[circuits]]
+id = "stage-right"
+label = "Synthetic right circuit"
+declared_max_current_a = "5"
+notes = "Fictional declared maximum only."
+
+[[devices]]
+id = "instrument"
+label = "Synthetic instrument"
+circuit_id = "stage-left"
+declared_apparent_power_va = "230"
+criticality = "critical"
+notes = "Fictional device declaration only."
+
+[[devices]]
+id = "mixer"
+label = "Synthetic mixer"
+circuit_id = "stage-left"
+declared_apparent_power_va = "460"
+criticality = "routine"
+notes = "Fictional device declaration only."
+
+[[devices]]
+id = "processor"
+label = "Synthetic processor"
+circuit_id = "stage-right"
+declared_apparent_power_va = "1380"
+criticality = "critical"
+notes = "Fictional device declaration only."
